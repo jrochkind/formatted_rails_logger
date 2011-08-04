@@ -1,4 +1,5 @@
 require "formatted_rails_logger/version"
+require 'formatted_rails_logger/formatter'
 
 module FormattedRailsLogger
   def self.patch_rails
