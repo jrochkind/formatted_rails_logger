@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = FormattedRailsLogger::VERSION
   s.authors     = ["Jonathan Rochkind"]
   s.email       = ["jonathan@dnil.net"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/jrochkind/formatted_rails_logger"
   s.summary     = %q{Formatting capabilities for Rails BufferedLogger}  
 
   s.rubyforge_project = "formatted_rails_logger"
