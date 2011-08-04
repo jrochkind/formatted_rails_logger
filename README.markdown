@@ -2,7 +2,7 @@
 
 Monkey-patches Rails BufferedLogger (the standard Rails logger) to accept a formatter just like ruby Logger does. Provides a formatter that includes timestamp and severity in logs, while taking account of Rails habit of making space in the logfile by adding newlines to the beginning of log message. 
 
-It's only 80 lines of verbose code.  I'd think a bazillion people would have done this before, but I didn't see any other gems to do it simply and flexibly, sorry for any duplication. 
+It's only 80 lines of verbose code. (yes, this readme is longer than the source) I'd think a bazillion people would have done this before, but I didn't see any other gems to do it simply and flexibly, sorry for any duplication. 
 
 ## How to use
 
