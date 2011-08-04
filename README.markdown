@@ -45,9 +45,9 @@ I did use a regexp to look for newlines at the very beginning of a log message, 
 
 * Why has Rails always thought it better to exclude timestamps and severity from logfiles? Me, I need to be able to grep logfiles for "ERROR" or "FATAL" or "WARN" to see how my app's doing, and I need to be able to have timestamps to correlate human observed problems to the logs. Am I really alone here? 
 
-* Why does Rails BufferedLogger not provide the same formatter functionality a usual ruby Logger, either by sub-classing Logger, or duck-typing the formatter functionality too?  (But, hey, it's better than Rails <=2.2, where Rails monkey patched ruby Logger to ignore it's #formatter, huh?)
+* Why does Rails BufferedLogger not provide the same #formatter functionality as ruby Logger, either by sub-classing Logger, or duck-typing the formatter functionality too?  (But, hey, it's better than Rails <=2.2, where Rails monkey patched ruby Logger to ignore it's #formatter, huh?)
 
-* Why does ruby 1.8.7 Time.strftime not accept an %L formatting string, even though the [documentation](http://www.ruby-doc.org/core/classes/Time.html#M000392) says it should? Did they fix this in 1.9? I don't know. For that matter, why does ruby Time give you a method to get microseconds, but a method to get miliseconds?
+* Why does ruby 1.8.7 Time.strftime not accept an %L formatting string, even though the [documentation](http://www.ruby-doc.org/core/classes/Time.html#M000392) says it should? Did they fix this in 1.9? I don't know. For that matter, why does ruby Time give you a method to get microseconds, but a not method to get miliseconds?
 
 ## Things I didn't do
 
