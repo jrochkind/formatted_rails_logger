@@ -11,6 +11,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{Formatting capabilities for Rails BufferedLogger}  
 
   s.rubyforge_project = "formatted_rails_logger"
+  
+  s.add_dependency "rails", "~> 3.2.0"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

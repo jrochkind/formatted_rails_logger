@@ -7,7 +7,11 @@ class FormattedRailsLogger::Formatter
   @@format_str = "[%s] %5s  %s"
   @@datetime_format = nil 
   
-  def call(severity, time, progname, msg)        
+  def call(severity, time, progname, msg)   
+    # Rails 3.2 seems to automatically add a newline, for consistency
+    # we will too. 
+    msg += "\n"
+    
     # see no need for micro-seconds like in Logger, milis suffices. 
     # No idea why documented %L and other such useful things
     # do not work in strftime. 

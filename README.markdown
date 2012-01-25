@@ -6,7 +6,9 @@ It's only 80 lines of verbose code. (yes, this readme is longer than the source)
 
 ## How to use
 
-Should work for both Rails2 and Rails3. 
+Version 0.1.0 should work for both Rails2 and Rails 3.0.x - 3.1.x
+
+Version 0.2.0 for Rails 3.2.0 -- will future versions of Rails 3.2.x again change internal logger implementation to break this? Who knows! Why doesn't Rails just support #formatter for us? Who knows! At least 3.2.0 made it a lot easier to patch in, with an internal stdlib Logger at the bottom of things. 
 
 Include the formatted_rails_logger gem in your project as appropriate for your Rails version. 
 
